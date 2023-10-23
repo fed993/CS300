@@ -5,22 +5,28 @@
 
 int main()
 {
-	// SLLString str("Hello world!");
-	SLLString *newStr = new SLLString("LOL SUS JOJ");
+	SLLString banana("Hello world!");
+	// SLLString newStr;
 
-	// *newStr = str;
-	// *newStr += SLLString("CS@BC");
-	// newStr[6] = 'W';
+	SLLString *stringyWingy = new SLLString("LOop");
 
-	// std::cout << newStr << std::endl;			// Hello World! CS@BC
-	// std::cout << newStr.length() << std::endl;	//18
+	SLLString *SLLStringy = new SLLString(*stringyWingy);
 
-	// int loc = newStr.findSubstring("World");
-	// std::cout << loc << std::endl;				// 6
+// 	newStr = str;
+// 	newStr += SLLString("CS@BC");
+// 	newStr[6] = 'W';
 
-	// newStr.erase('l');							//erase the letter l
-	// std::cout << newStr << std::endl;			// Heo Word! CS@BC
+// 	std::cout << newStr << std::endl;			// Hello World! CS@BC
+// 	std::cout << newStr.length() << std::endl;	//18
 
-	// newStr.erase('C');							//erase the letter C
-	// std::cout << newStr << std::endl;			// Heo Word! S@B
+// 	int loc = newStr.findSubstring("World");
+// 	std::cout << loc << std::endl;				// 6
+
+// 	newStr.erase('l');							//erase the letter l
+// 	std::cout << newStr << std::endl;			// Heo Word! CS@BC
+
+// 	newStr.erase('C');
+// 	std::cout << newStr << std::endl;			// Heo Word! S@B
+
+// 	return 0;
 }
