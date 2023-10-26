@@ -4,10 +4,7 @@
 int main() {
     BubbleSort BS;
 
-    int *myArray = new int[10];
-    for (int i = 0; i < 10; i++) {
-        myArray[i] = i;
-    }
+    int myArray[10] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
     BS.sort(myArray, 10);    
 }

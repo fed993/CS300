@@ -51,11 +51,16 @@ SLLString::SLLString(const SLLString& other) {
         std::cout << " head is: " << m_pHead << std::endl;
         std::cout << " tail is: " << m_pTail << std::endl;
     }
-
 }
 
 SLLString::~SLLString() {
-    
+    Node<char> *current = m_pHead;
+    while( current != nullptr) {
+        Node<char> *next = current->getNext();
+        delete current;
+        current = next;
+    }
+    m_pHead = nullptr;
 }
 
 // void SLLString::print() {

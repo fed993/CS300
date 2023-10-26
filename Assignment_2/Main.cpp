@@ -6,7 +6,7 @@
 int main()
 {
 	SLLString banana("Hello world!");
-	// SLLString newStr;
+	SLLString newStr;
 
 	SLLString *stringyWingy = new SLLString("LOop");
 
