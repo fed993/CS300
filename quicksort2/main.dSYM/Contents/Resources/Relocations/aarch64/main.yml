@@ -1,0 +1,25 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/home/workspace/CS300/quicksort2/main'
+relocations:
+  - { offsetInCU: 0xB6, offset: 0xB6, size: 0x8, addend: 0x0, symName: __ZN9QuickSort4sortEPii, symObjAddr: 0x0, symBinAddr: 0x100003920, symSize: 0x44 }
+  - { offsetInCU: 0x3206, offset: 0x3206, size: 0x8, addend: 0x0, symName: __ZStL8__ioinit, symObjAddr: 0xF050, symBinAddr: 0x100008000, symSize: 0x0 }
+  - { offsetInCU: 0x35FE, offset: 0x35FE, size: 0x8, addend: 0x0, symName: __ZNSt8__detail30__integer_to_chars_is_unsignedIjEE, symObjAddr: 0x50C, symBinAddr: 0x100003E6C, symSize: 0x0 }
+  - { offsetInCU: 0x3618, offset: 0x3618, size: 0x8, addend: 0x0, symName: __ZNSt8__detail30__integer_to_chars_is_unsignedImEE, symObjAddr: 0x50D, symBinAddr: 0x100003E6D, symSize: 0x0 }
+  - { offsetInCU: 0x3632, offset: 0x3632, size: 0x8, addend: 0x0, symName: __ZNSt8__detail30__integer_to_chars_is_unsignedIyEE, symObjAddr: 0x50E, symBinAddr: 0x100003E6E, symSize: 0x0 }
+  - { offsetInCU: 0x3658, offset: 0x3658, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_main.cpp, symObjAddr: 0x484, symBinAddr: 0x100003DA4, symSize: 0x14 }
+  - { offsetInCU: 0x3684, offset: 0x3684, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x448, symBinAddr: 0x100003D68, symSize: 0x3C }
+  - { offsetInCU: 0x368C, offset: 0x368C, size: 0x8, addend: 0x0, symName: __GLOBAL__sub_I_main.cpp, symObjAddr: 0x484, symBinAddr: 0x100003DA4, symSize: 0x14 }
+  - { offsetInCU: 0x3680, offset: 0x3680, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x3CC, symBinAddr: 0x100003CEC, symSize: 0x7C }
+  - { offsetInCU: 0x3688, offset: 0x3688, size: 0x8, addend: 0x0, symName: __Z41__static_initialization_and_destruction_0v, symObjAddr: 0x448, symBinAddr: 0x100003D68, symSize: 0x3C }
+  - { offsetInCU: 0x370F, offset: 0x370F, size: 0x8, addend: 0x0, symName: __Z13array_printerPii, symObjAddr: 0x2F4, symBinAddr: 0x100003C14, symSize: 0xD8 }
+  - { offsetInCU: 0x3717, offset: 0x3717, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x3CC, symBinAddr: 0x100003CEC, symSize: 0x7C }
+  - { offsetInCU: 0x375C, offset: 0x375C, size: 0x8, addend: 0x0, symName: __ZN9QuickSort4swapEii, symObjAddr: 0x270, symBinAddr: 0x100003B90, symSize: 0x84 }
+  - { offsetInCU: 0x3764, offset: 0x3764, size: 0x8, addend: 0x0, symName: __Z13array_printerPii, symObjAddr: 0x2F4, symBinAddr: 0x100003C14, symSize: 0xD8 }
+  - { offsetInCU: 0x37C7, offset: 0x37C7, size: 0x8, addend: 0x0, symName: __ZN9QuickSort9partitionEii, symObjAddr: 0xC8, symBinAddr: 0x1000039E8, symSize: 0x1A8 }
+  - { offsetInCU: 0x37CF, offset: 0x37CF, size: 0x8, addend: 0x0, symName: __ZN9QuickSort4swapEii, symObjAddr: 0x270, symBinAddr: 0x100003B90, symSize: 0x84 }
+  - { offsetInCU: 0x3857, offset: 0x3857, size: 0x8, addend: 0x0, symName: __ZN9QuickSort7sortRecEii, symObjAddr: 0x44, symBinAddr: 0x100003964, symSize: 0x84 }
+  - { offsetInCU: 0x385F, offset: 0x385F, size: 0x8, addend: 0x0, symName: __ZN9QuickSort9partitionEii, symObjAddr: 0xC8, symBinAddr: 0x1000039E8, symSize: 0x1A8 }
+  - { offsetInCU: 0x38E7, offset: 0x38E7, size: 0x8, addend: 0x0, symName: __ZN9QuickSort4sortEPii, symObjAddr: 0x0, symBinAddr: 0x100003920, symSize: 0x44 }
+  - { offsetInCU: 0x38EF, offset: 0x38EF, size: 0x8, addend: 0x0, symName: __ZN9QuickSort7sortRecEii, symObjAddr: 0x44, symBinAddr: 0x100003964, symSize: 0x84 }
+...

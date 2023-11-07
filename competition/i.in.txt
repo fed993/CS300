@@ -1,0 +1,29 @@
+2
+Alice Bob
+Alice
+Bob
+11
+Alice Bob Charlene David Eve Frank Gertrude Hal Irene James Karen
+Alice Charlene Eve
+Bob David Frank
+Charlene Gertrude
+David Hal
+Eve Karen
+Frank James
+Gertrude Irene
+Hal James
+Irene Karen
+James Karen
+Karen James
+10
+Alice Bob Charlene David Eve Frank Gertrude Hal Irene James
+Alice Charlene
+Bob Charlene
+Charlene David
+David Eve
+Eve Frank
+Frank Gertrude
+Gertrude Hal
+Hal Irene
+Irene James
+James Alice
