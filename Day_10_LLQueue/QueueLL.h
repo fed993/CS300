@@ -2,19 +2,20 @@
 #define QUEUELLL_H
 #include "Node.h"
 
+template <class T>
 class QueueLL {
     private:
-        Node *m_head;
-        Node *m_tail;
+        Node<T> *m_head;
+        Node<T> *m_tail;
 
     public:
-        void enqueue(int data);
+        void enqueue(T data);
         int dequeue();
         int peek();
 
         bool isEmpty() { return m_head == nullptr; }
 
-        QueueLL();
+        QueueLL<T>();
 };
 
 #endif

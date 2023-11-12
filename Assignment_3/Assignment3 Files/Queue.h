@@ -1,21 +1,27 @@
 #ifndef QUEUE_H
 #define QUEUE_H
-#include <iostream>
-
-using namespace std;
 
 template <class T>
-class Queue{
+class Queue {
     private:
+        T *m_arr;
+        int m_capacity;
+        int m_num_used;
 
-    public:
-        Queue<T>();
-        void enqueue(const T&);     // Add to queue from the back
-        T& dequeue();               // Remove from queue from the front
-        T& peek();                  // Returns the value of the front element
-        void print();               // Prints out the entire queue
-        bool isEmpty();             // Check if queue is empty
-        bool isFull();              // Check if queue is full
+        int m_front;
+        int m_end;
+    public: 
+        Queue();
+        ~Queue();
+
+        void enqueue(T data);
+        T& dequeue();
+        T& peek();
+
+        void print(); // TODO: Write this
+
+        bool isFull();
+        bool isEmpty();
 };
 
 #endif

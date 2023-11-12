@@ -1,12 +1,14 @@
 #include <iostream>
 #include "QueueLL.h"
 
-QueueLL::QueueLL() {
+template <class T>
+QueueLL<T>::QueueLL() {
     m_head = m_tail = nullptr;
 }
 
-void QueueLL::enqueue(int data) {
-    Node *addToQueue = new Node(data);
+template <class T>
+void QueueLL<T>::enqueue(T data) {
+    Node<T> *addToQueue = new Node<T>(data);
 
     if (isEmpty()) {
         m_head = m_tail = addToQueue;
@@ -16,21 +18,22 @@ void QueueLL::enqueue(int data) {
     }
 }
 
-// int QueueLL::dequeue() {
+template <class T>
+int QueueLL<T>::dequeue() {
 
-//     int returnData = -1;
+    int returnData = -1;
 
-//     if (!isEmpty()) {
-//         Node *removeNode = m_head;
-//         returnData = removeNode->getData();
+    if (!isEmpty()) {
+        Node<T> *removeNode = m_head;
+        returnData = removeNode->getData();
 
-//         m_head = m_head->getNext();
+        m_head = m_head->getNext();
 
-//         if (m_head = nullptr) {
-//             m_tail = nullptr;
-//         }
-//         delete removeNode;
-//     }
+        if (m_head = nullptr) {
+            m_tail = nullptr;
+        }
+        delete removeNode;
+    }
 
-//     return returnData;
-// }
+    return returnData;
+}
