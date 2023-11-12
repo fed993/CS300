@@ -1,8 +1,6 @@
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
-#include <string>
-
 class Customer {
     private:
         int m_arrivalTime;
@@ -22,7 +20,8 @@ class Customer {
 
 
 std::ostream& operator<<(std::ostream &strm, Customer &customer) {
-  return strm << "Customer with arrival time " << customer.getArrivalTime() << " and processing time " << customer.getProcessingTime();
+  return strm << "Customer with arrival time " << customer.getArrivalTime() 
+    << " and processing time " << customer.getProcessingTime();
 }
 
 std::string& operator+=(std::string &string, Customer &customer) {
