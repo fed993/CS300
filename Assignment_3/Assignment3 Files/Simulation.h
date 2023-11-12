@@ -33,10 +33,12 @@ class Simulation {
     private:
         int m_totalDelay;
         int m_largestDelay;
+        int m_numCustomers;
         int m_currentDelay;
         int m_processingTime;
     public:
-        Simulation() : m_totalDelay(0), m_largestDelay(0),  {}
+        Simulation() 
+            : m_totalDelay(0), m_largestDelay(0), m_currentDelay(0), m_processingTime(0), m_numCustomers(0) {}
         void processCustomers(Queue<Customer>);
         void printStatistics();
 };

@@ -10,10 +10,23 @@
 // processing time, update maxDelay with the currentDelay if it's bigger than
 // previous maxDelay. Continue until queue empty.
 void Simulation::processCustomers(Queue<Customer> waitlist) {
+    
+    Customer thisGuy = waitlist.dequeue(); //grab a dude
 
+    int thisGuyWaits = m_currentDelay - thisGuy.getArrivalTime();
+    thisGuyWaits = (thisGuyWaits < 0) ? 0 : thisGuyWaits;
+
+    // update stats, based on this guy's wait time
+    m_totalDelay +=  thisGuyWaits;
+    m_largestDelay = (thisGuyWaits > m_largestDelay) ? thisGuyWaits : m_largestDelay; 
+
+    m_currentDelay += thisGuy.getProcessingTime();
 }
 
 
 void Simulation::printStatistics() {
+    int averageDelay = m_totalDelay / m_numCustomers;
 
+    std::cout << "Max Delay = " << m_largestDelay << std::endl;
+    std::cout << "Average Delay = " << averageDelay << std::endl;
 }
