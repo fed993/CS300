@@ -1,12 +1,40 @@
-#include "Queue.h"
 #include "Customer.h"
 #include <iostream>
 
 template <class T>
-Queue<T>::Queue() 
-    : m_capacity(100), m_end(0), m_front(0), m_num_used(0) {
-        m_arr = new T[m_capacity+1];
+Queue<T>::Queue()
+    : m_capacity(ARR_MAX_SIZE), m_end(0), m_front(0), m_num_used(0) {
+    m_arr = new T[m_capacity+1];
+}
+
+template <class T>
+Queue<T>::Queue(const Queue<T> &copyMe)
+    : m_capacity(copyMe.m_capacity), m_end(copyMe.m_end),
+        m_front(copyMe.m_front), m_num_used(copyMe.m_num_used) {
+    m_arr = new T[m_capacity+1];
+
+    for (int i = 0; i < ARR_MAX_SIZE; i++) {
+        m_arr[i] = copyMe.m_arr[i];
     }
+}
+
+template <class T>
+Queue<T>& Queue<T>::operator=(const Queue<T>& queue) {
+    delete[] m_arr;
+
+    m_capacity = queue.m_capacity;
+    m_end = queue.m_end;
+    m_front = queue.m_front;
+    m_num_used = queue.m_num_used;
+    
+    m_arr = new T[m_capacity+1];
+
+    for (int i = 0; i < ARR_MAX_SIZE; i++) {
+        m_arr[i] = queue.m_arr[i];
+    }
+
+    return *this;
+}
 
 template <class T>
 Queue<T>::~Queue() {
@@ -17,7 +45,7 @@ Queue<T>::~Queue() {
 // check if the queue has any space, and if so, add something to the end of it,
 // increment size
 template <class T>
-void Queue<T>::enqueue(T data) {
+void Queue<T>::enqueue(const T& data) {
     if (!isFull()) {
         m_arr[m_end] = data;
         m_end = ((m_end + 1) % m_capacity);

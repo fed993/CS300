@@ -2,10 +2,11 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: g++-13 build active file",
-            "command": "/opt/homebrew/bin/g++-13",
+            "label": "C/C++: clang++ build active file",
+            "command": "/usr/bin/clang++",
             "args": [
-                "-fdiagnostics-color=always",
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
                 "-g",
                 "${file}",
                 "-o",
