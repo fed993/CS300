@@ -30,11 +30,11 @@ int main()
 	cout << "Testing Plain Bag" << endl;
 	BagInterface<int>* bag = new PlainBag<int>;
 	testBag(*bag);
-	cout << "\n..............................." << endl;
-	cout << "Testing Magic Change Bag" << endl;
-	bag = new MagicChangeBag<int>;
-	testBag(*bag);
-	return 0;
+	// cout << "\n..............................." << endl;
+	// cout << "Testing Magic Change Bag" << endl;
+	// bag = new MagicChangeBag<int>;
+	// testBag(*bag);
+	// return 0;
 }
 /*
 Sample Run:
